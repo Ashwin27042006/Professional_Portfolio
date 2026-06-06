@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intern Portfolio</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:80px;
+    flex-wrap:wrap;
+}
+
+.profile-img{
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #38bdf8;
+    box-shadow:0 0 40px rgba(56,189,248,.4);
+}
+
+.content{
+    max-width:650px;
+}
+
+.tag{
+    color:#38bdf8;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-weight:600;
+}
+
+h1{
+    font-size:4rem;
+    margin:10px 0;
+}
+
+.highlight{
+    color:#38bdf8;
+}
+
+.subtitle{
+    font-size:1.3rem;
+    color:#cbd5e1;
+}
+
+.about{
+    margin-top:25px;
+    line-height:1.8;
+    color:#dbeafe;
+}
+
+.btn-group{
+    margin-top:30px;
+}
+
+.btn{
+    text-decoration:none;
+    display:inline-block;
+    padding:14px 28px;
+    background:#38bdf8;
+    color:black;
+    border-radius:50px;
+    font-weight:bold;
+    margin-right:15px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+}
+
+.section{
+    padding:80px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    justify-content:center;
+}
+
+.skill{
+    background:#1e293b;
+    padding:12px 22px;
+    border-radius:30px;
+    border:1px solid #334155;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:12px 0;
+    color:#cbd5e1;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    border-top:1px solid #334155;
+    color:#94a3b8;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<section class="hero">
+
+<img src="ashwin.jpg" alt="Profile Photo" class="profile-img">
+
+<div class="content">
+
+<p class="tag"></p>
+
+<h1>Hi, I'm <span class="highlight">A.S. ASHWIN</span></h1>
+
+<p class="subtitle">
+Second Year Information & Technology Student in B.Tech
+</p>
+
+<p class="about">
+I am an enthusiastic Engineering student, pursuing my second year of study in Information and Technology at St. Xavier College, Nagercoil. During my two years of study, I have developed a lot of skills in front-end, back-end and other fields as well. Now I am eager to learn from a professional company and ready to test the skills that I have harnessed in a dynamic environment.
+</p>
+
+<div class="btn-group">
+<a href="ashwin_resume.pdf" class="btn">Download Resume</a>
+<a href="#contact" class="btn">Contact Me</a>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Career Objective</h2>
+
+<div class="card">
+<p style="line-height:1.8;">
+Motivated and enthusiastic Information and Technology student
+seeking an internship opportunity to apply academic knowledge,
+gain hands-on experience, learn from industry professionals,
+and contribute to meaningful software and technology projects.
+</p>
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Education</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>B.Tech. Information & Technology</h3>
+<p>St. Xavier College of Engineerng</p>
+<p>Second Year</p>
+<p>Expected Graduation: 2028</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Technical Skills</h2>
+
+<div class="skills">
+
+<span class="skill">Python</span>
+<span class="skill">C</span>
+<span class="skill">Java</span>
+<span class="skill">HTML</span>
+<span class="skill">CSS</span>
+<span class="skill">JavaScript</span>
+<span class="skill">SQL</span>
+
+</div>
+
+</section>
+
+<section class="section contact" id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<p>📧 knownasashwin@gmail.com</p>
+<p>📱 +91 9489063090</p>
+
+
+</section>
+
+</div>
+
+<footer>
+© 2026 • Internship Portfolio • Computer Science Student
+</footer>
+
+<script>
+
+document.querySelectorAll('.card').forEach(card=>{
+    card.addEventListener('mousemove',()=>{
+        card.style.boxShadow="0 10px 30px rgba(56,189,248,.2)";
+    });
+
+    card.addEventListener('mouseleave',()=>{
+        card.style.boxShadow="none";
+    });
+});
+
+</script>
+
+</body>
+</html>
